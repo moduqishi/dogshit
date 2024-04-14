@@ -143,12 +143,3 @@ def exam_details(exams, access_token):
     return results
 
 
-exams_info = fetch_exams_info('41ec7f75-f300-4e98-8f4e-b34cafb80cba')
-#print(exams_info)
-
-# 获取格式化数据
-formatted_results = exam_details(exams_info, '41ec7f75-f300-4e98-8f4e-b34cafb80cba')
-
-# 打印结果
-print(formatted_results)
-
