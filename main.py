@@ -1,8 +1,8 @@
 import flet as ft
 import grass
 
-username = "luoxin988"
-password = "123456"
+username = "hujicong877"
+password = "12345678"
 
 access_token = grass.get_access_token(username, password)['access_token']
 examsinfo = grass.fetch_exams_info(access_token)
