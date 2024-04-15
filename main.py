@@ -18,7 +18,7 @@ def main(page: ft.Page):
     page.appbar = ft.AppBar(
         leading=ft.Icon(ft.icons.PALETTE),
         leading_width=40,
-        title=ft.Text("大狗屎查成绩"),
+        title=ft.Text("大狗屎查成绩(沈青骅定制版)"),
         center_title=False,
         bgcolor=ft.colors.SURFACE_VARIANT,
         actions=[
@@ -28,12 +28,13 @@ def main(page: ft.Page):
     page.add(ft.Text("数据加载需要时间，请耐心等待！", color=ft.colors.RED,))
     page.update()
     
-    username = "luoxin988"
-    password = "123456"
+    username = "shenqinghua303"
+    password = "123456..."
+    studentId = "6498643"
 
     access_token = grass.get_access_token(username, password)['access_token']
     examsinfo = grass.fetch_exams_info(access_token)
-    exams = grass.exam_details(examsinfo, access_token)
+    exams = grass.exam_details(examsinfo, access_token, studentId)
 
     
     # 遍历数据以创建每个考试的卡片
