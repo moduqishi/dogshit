@@ -28,8 +28,8 @@ def main(page: ft.Page):
     page.add(ft.Text("数据加载需要时间，请耐心等待！", color=ft.colors.RED,))
     page.update()
     
-    username = "shenqinghua303"
-    password = "123456..."
+    username = "luoxin988"
+    password = "123456"
 
     access_token = grass.get_access_token(username, password)['access_token']
     examsinfo = grass.fetch_exams_info(access_token)
