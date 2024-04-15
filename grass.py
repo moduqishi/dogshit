@@ -52,7 +52,7 @@ def fetch_exams_info(access_token):
         	}
         data = {
         	"current": 1,
-        	"size": 5
+        	"size": 50
         	}
         response = requests.post(url, json=data, headers=headers)
         response.raise_for_status()
