@@ -18,7 +18,7 @@ def main(page: ft.Page):
     page.appbar = ft.AppBar(
         leading=ft.Icon(ft.icons.PALETTE),
         leading_width=40,
-        title=ft.Text("大狗屎查成绩(沈青骅定制版)"),
+        title=ft.Text("大狗屎查成绩(聪聪定制版)"),
         center_title=False,
         bgcolor=ft.colors.SURFACE_VARIANT,
         actions=[
@@ -28,9 +28,9 @@ def main(page: ft.Page):
     page.add(ft.Text("数据加载需要时间，请耐心等待！", color=ft.colors.RED,))
     page.update()
     
-    username = "shenqinghua303"
-    password = "123456..."
-    studentId = "6498643"
+    username = "hujicong877"
+    password = "12345678"
+    studentId = "3124625"
 
     access_token = grass.get_access_token(username, password)['access_token']
     examsinfo = grass.fetch_exams_info(access_token)
