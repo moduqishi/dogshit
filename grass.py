@@ -69,7 +69,7 @@ def fetch_exams_info(access_token):
         print ("Oops: Something went wrong", err)
 
 
-def exam_details(exams, access_token):
+def exam_details(exams, access_token, studentId):
     # 定义请求头
     headers = {
         'SCHOOL-ID': '20125',
@@ -85,7 +85,7 @@ def exam_details(exams, access_token):
             # 准备请求参数
             params = {
                 'id': exam_info['id'],
-                'studentId': 3124646,
+                'studentId': studentId,
                 'subjectId': 0
             }
             
