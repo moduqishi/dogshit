@@ -22,7 +22,7 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v1
         with:
-          flutter-version: '3.16.9'
+          flutter-version: '3.19.5'
 
       - name: Update Dart SDK
         run: flutter upgrade
@@ -55,7 +55,7 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v1
         with:
-          flutter-version: '3.16.9'
+          flutter-version: '3.19.5'
 
       - name: Update Dart SDK
         run: flutter upgrade
