@@ -36,6 +36,13 @@ def main(page: ft.Page):
     examsinfo = grass.fetch_exams_info(access_token)
     exams = grass.exam_details(examsinfo, access_token, studentId)
 
+    for exam in exams:
+      for key, value in exam.items():
+        for score in value.get('scores', []):
+            score['answerpaperA'] = score['answerpaperA'].replace('.jpg', '_score_detail.jpg')
+            score['answerpaperB'] = score['answerpaperB'].replace('.jpg', '_score_detail.jpg')
+
+
     
     # 遍历数据以创建每个考试的卡片
     for exam_data in exams:
